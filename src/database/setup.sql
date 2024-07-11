@@ -1,0 +1,6 @@
+DROP DATABASE IF EXISTS pokemart;
+DROP DATABASE IF EXISTS pokemart_test;
+
+
+CREATE DATABASE pokemart;
+CREATE DATABASE pokemart_test;

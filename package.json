@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
+    "setup-dbs": "psql -f ./src/database/setup.sql",
     "test": "vitest --watch=false",
-    "watch":"vitest",
+    "watch": "vitest",
     "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
@@ -15,14 +16,17 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/pg": "^8.11.6",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.10",
     "husky": "^9.0.11",
     "nodemon": "^3.1.4",
+    "pg-format": "^1.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3",
     "vitest": "^2.0.2"
