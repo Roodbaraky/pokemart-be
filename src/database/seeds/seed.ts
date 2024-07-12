@@ -5,7 +5,7 @@ export interface Item {
     id: number,
     name: string,
     sprite: string,
-    cost: number, // Corrected to number
+    cost: number, 
     effect: string
 }
 
