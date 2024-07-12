@@ -1,0 +1,197 @@
+[
+    {
+        "name":"poke-ball",
+        "specialPrice": {"quantity":3, "price":500},
+        "tag":"Buy 3 get 100 off"
+    },
+    {
+        "name": "premier-ball",
+        "specialPrice": {"quantity": 5, "price": 80},
+        "tag": "Buy 5 for 80"
+    },
+    {
+        "name": "dusk-ball",
+        "specialPrice": {"quantity": 3, "price": 2500},
+        "tag": "Buy 3 for 2500"
+    },
+    {
+        "name": "heal-ball",
+        "specialPrice": {"quantity": 4, "price": 1000},
+        "tag": "Buy 4 for 1000"
+    },
+    {
+        "name": "quick-ball",
+        "specialPrice": {"quantity": 2, "price": 1800},
+        "tag": "Buy 2 for 1800"
+    },
+    {
+        "name": "potion",
+        "specialPrice": {"quantity": 10, "price": 1500},
+        "tag": "Buy 10 for 1500"
+    },
+    {
+        "name": "antidote",
+        "specialPrice": {"quantity": 5, "price": 800},
+        "tag": "Buy 5 for 800"
+    },
+    {
+        "name": "burn-heal",
+        "specialPrice": {"quantity": 5, "price": 800},
+        "tag": "Buy 5 for 800"
+    },
+    {
+        "name": "ice-heal",
+        "specialPrice": {"quantity": 5, "price": 800},
+        "tag": "Buy 5 for 800"
+    },
+    {
+        "name": "awakening",
+        "specialPrice": {"quantity": 5, "price": 800},
+        "tag": "Buy 5 for 800"
+    },
+    {
+        "name": "paralyze-heal",
+        "specialPrice": {"quantity": 5, "price": 800},
+        "tag": "Buy 5 for 800"
+    },
+    {
+        "name": "full-restore",
+        "specialPrice": {"quantity": 2, "price": 5000},
+        "tag": "Buy 2 for 5000"
+    },
+    {
+        "name": "max-potion",
+        "specialPrice": {"quantity": 2, "price": 4000},
+        "tag": "Buy 2 for 4000"
+    },
+    {
+        "name": "hyper-potion",
+        "specialPrice": {"quantity": 3, "price": 4000},
+        "tag": "Buy 3 for 4000"
+    },
+    {
+        "name": "super-potion",
+        "specialPrice": {"quantity": 5, "price": 3000},
+        "tag": "Buy 5 for 3000"
+    },
+    {
+        "name": "full-heal",
+        "specialPrice": {"quantity": 5, "price": 1500},
+        "tag": "Buy 5 for 1500"
+    },
+    {
+        "name": "revive",
+        "specialPrice": {"quantity": 3, "price": 5000},
+        "tag": "Buy 3 for 5000"
+    },
+    {
+        "name": "max-revive",
+        "specialPrice": {"quantity": 2, "price": 7500},
+        "tag": "Buy 2 for 7500"
+    },
+    {
+        "name": "fresh-water",
+        "specialPrice": {"quantity": 10, "price": 1500},
+        "tag": "Buy 10 for 1500"
+    },
+    {
+        "name": "soda-pop",
+        "specialPrice": {"quantity": 10, "price": 2500},
+        "tag": "Buy 10 for 2500"
+    },
+    {
+        "name": "lemonade",
+        "specialPrice": {"quantity": 5, "price": 1500},
+        "tag": "Buy 5 for 1500"
+    },
+    {
+        "name": "moomoo-milk",
+        "specialPrice": {"quantity": 3, "price": 1500},
+        "tag": "Buy 3 for 1500"
+    },
+    {
+        "name": "energy-powder",
+        "specialPrice": {"quantity": 3, "price": 1200},
+        "tag": "Buy 3 for 1200"
+    },
+    {
+        "name": "energy-root",
+        "specialPrice": {"quantity": 2, "price": 2000},
+        "tag": "Buy 2 for 2000"
+    },
+    {
+        "name": "heal-powder",
+        "specialPrice": {"quantity": 5, "price": 1200},
+        "tag": "Buy 5 for 1200"
+    },
+    {
+        "name": "revival-herb",
+        "specialPrice": {"quantity": 2, "price": 5000},
+        "tag": "Buy 2 for 5000"
+    },
+    {
+        "name": "ether",
+        "specialPrice": {"quantity": 3, "price": 3000},
+        "tag": "Buy 3 for 3000"
+    },
+    {
+        "name": "max-ether",
+        "specialPrice": {"quantity": 2, "price": 3500},
+        "tag": "Buy 2 for 3500"
+    },
+    {
+        "name": "elixir",
+        "specialPrice": {"quantity": 2, "price": 5000},
+        "tag": "Buy 2 for 5000"
+    },
+    {
+        "name": "max-elixir",
+        "specialPrice": {"quantity": 2, "price": 8000},
+        "tag": "Buy 2 for 8000"
+    },
+    {
+        "name": "lava-cookie",
+        "specialPrice": {"quantity": 5, "price": 1500},
+        "tag": "Buy 5 for 1500"
+    },
+    {
+        "name": "berry-juice",
+        "specialPrice": {"quantity": 10, "price": 1500},
+        "tag": "Buy 10 for 1500"
+    },
+    {
+        "name": "sacred-ash",
+        "specialPrice": {"quantity": 2, "price": 90000},
+        "tag": "Buy 2 for 90000"
+    },
+    {
+        "name": "hp-up",
+        "specialPrice": {"quantity": 2, "price": 18000},
+        "tag": "Buy 2 for 18000"
+    },
+    {
+        "name": "protein",
+        "specialPrice": {"quantity": 2, "price": 18000},
+        "tag": "Buy 2 for 18000"
+    },
+    {
+        "name": "iron",
+        "specialPrice": {"quantity": 2, "price": 18000},
+        "tag": "Buy 2 for 18000"
+    },
+    {
+        "name": "carbos",
+        "specialPrice": {"quantity": 2, "price": 18000},
+        "tag": "Buy 2 for 18000"
+    },
+    {
+        "name": "calcium",
+        "specialPrice": {"quantity": 2, "price": 18000},
+        "tag": "Buy 2 for 18000"
+    },
+    {
+        "name": "rare-candy",
+        "specialPrice": {"quantity": 2, "price": 18000},
+        "tag": "Buy 2 for 18000"
+    }
+]

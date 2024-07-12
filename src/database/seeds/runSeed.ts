@@ -1,12 +1,13 @@
-import { Item, seed } from "./seed"
+import { Item, Offer, seedItems, seedOffers } from "./seed"
 import { pool } from '../connection'
 import  dotenv from 'dotenv'
 
 const itemsData: Item[] = require('../data/itemsData.json')
-
+const offersData: Offer[] = require('../data/offersData.json')
 
 const runSeed = async () => {
-    await seed(itemsData)
+    await seedItems(itemsData)
+    await seedOffers(offersData)
     await pool.end()
 }
 runSeed()
