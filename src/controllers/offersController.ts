@@ -6,7 +6,7 @@ const query = req.query
 const params = req.params
 try{
     const offers = await fetchOffers(query, params)
-    res.status(200).send(offers.rows[0])
+    res.status(200).send(offers.rows)
 } catch (error) { next(error) }
 
 }

@@ -28,7 +28,7 @@ describe('getOffers', () => {
 
     expect(fetchOffers).toHaveBeenCalledWith(req.query, req.params);
     expect(res.status).toHaveBeenCalledWith(200);
-    expect(res.send).toHaveBeenCalledWith(mockOffers.rows[0]);
+    expect(res.send).toHaveBeenCalledWith(mockOffers.rows);
   });
 
   it('should handle errors and call next with error', async () => {
