@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest';
 import request from 'supertest';
 import express, { Express, Request, Response } from 'express';
 import { getItems } from '../src/controllers/itemsController';
+import { errorHandler } from '../src/errors';
 
 vi.mock('../src/controllers/itemsController', () => ({
   getItems: vi.fn((req: Request, res: Response) => {
@@ -19,6 +20,7 @@ describe('Express App', () => {
       res.send("Server is online :)");
     });
     app.get('/items', getItems);
+    app.all('/items', errorHandler)
 
     server = app.listen(5175);
   });
@@ -37,5 +39,21 @@ describe('Express App', () => {
     const res = await request(app).get('/items');
     expect(res.status).toBe(200);
     expect(res.body).toEqual([{ id: 1, name: 'Item 1' }]);
+  });
+
+  it('should return 404 for non-existent routes', async () => {
+    const res = await request(app).get('/non-existent-route');
+    expect(res.status).toBe(404);
+  });
+
+  it('should return 405 for invalid methods on existing routes', async () => {
+    const resPost = await request(app).post('/items');
+    expect(resPost.status).toBe(405);
+
+    const resPut = await request(app).put('/items');
+    expect(resPut.status).toBe(405);
+
+    const resDelete = await request(app).delete('/items');
+    expect(resDelete.status).toBe(405);
   });
 });
