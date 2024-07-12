@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import 'dotenv/config'
-
+import cors from 'cors'
 import { getItems } from "./controllers/itemsController";
 import { errorHandler } from "./errors";
 import { getOffers } from "./controllers/offersController";
@@ -9,6 +9,7 @@ import { getOffers } from "./controllers/offersController";
 dotenv.config();
 
 const app: Express = express();
+app.use(cors())
 const port = process.env.PORT || 5174;
 
 app.get("/", (req: Request, res: Response) => {
