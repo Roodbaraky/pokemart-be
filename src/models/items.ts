@@ -6,5 +6,5 @@ export const fetchItems = async (query?: any) => {
 
     const SQLString = `SELECT * from items `
 
-    return pool.query(SQLString + `LIMIT ${+limit} OFFSET ${+page};`)
+    return pool.query(SQLString + `LIMIT ${limit||98} OFFSET ${page||0};`)
 }
