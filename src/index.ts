@@ -1,5 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
+import 'dotenv/config'
+
 import { getItems } from "./controllers/itemsController";
 import { errorHandler } from "./errors";
 

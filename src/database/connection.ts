@@ -1,4 +1,5 @@
-import * as dotenv from 'dotenv';
+// connection.ts
+import dotenv from 'dotenv';
 import { Pool, PoolConfig } from 'pg';
 
 dotenv.config();
@@ -9,13 +10,12 @@ if (!process.env.PGDATABASE && !process.env.DATABASE_URL) {
   throw new Error('PGDATABASE or DATABASE_URL not set');
 }
 
-const config: PoolConfig = {};
+const config: PoolConfig = {
+  connectionString: process.env.DATABASE_URL,
+};
 
 if (ENV === 'production') {
-  config.connectionString = process.env.DATABASE_URL;
-  config.max = 2;
-}else{
-  config.connectionString = process.env.DATABASE_URL;
+  config.max = 2
 }
 
 export const pool = new Pool(config);

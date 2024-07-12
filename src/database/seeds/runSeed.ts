@@ -1,5 +1,7 @@
 import { Item, seed } from "./seed"
 import { pool } from '../connection'
+import  dotenv from 'dotenv'
+
 const itemsData: Item[] = require('../data/itemsData.json')
 
 
