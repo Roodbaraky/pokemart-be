@@ -21,7 +21,7 @@ describe('getItems', () => {
     const next = vi.fn() as NextFunction;
 
     const mockItems = { rows: [{ id: 1, name: 'Item 1' }] };
-    (fetchItems as vi.Mock).mockResolvedValueOnce(mockItems);
+    (fetchItems as any).mockResolvedValueOnce(mockItems);
 
     await getItems(req, res, next);
 
@@ -43,7 +43,7 @@ describe('getItems', () => {
     const next = vi.fn() as NextFunction;
 
     const error = new Error('Database error');
-    (fetchItems as vi.Mock).mockRejectedValueOnce(error);
+    (fetchItems as any).mockRejectedValueOnce(error);
 
     await getItems(req, res, next);
 
